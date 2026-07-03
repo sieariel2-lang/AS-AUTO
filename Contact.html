@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel sie auto</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+   <header>
+    <h1>Bienvenue sur AS AUTO</h1>
+    <nav class="navbar">
+                <a href="index.html">Accueil</a>
+                <a href="Catalogue.html">Catalogue</a>
+                <a href="Contact.html">Contacts</a>
+                <a href="Apropos.html">A Propos </a>
+            </nav>
+</header>
+
+<main class="container">
+
+<section class="form-section">
+    <h2>Passer une commande / Contact</h2>
+    <p>Remplissez ce formulaire, nous vous répondons sous 24h.</p>
+
+    <form class="form-contact" action="#" method="post">
+
+        <div class="champ">
+            <label for="nom">Nom complet *</label>
+            <input type="text" id="nom" name="nom" placeholder="KOFFI KOFFI" required minlength="2">
+        </div>
+
+        <div class="champ">
+            <label for="email">Adresse email *</label>
+            <input type="email" id="email" name="email" placeholder="koffi@gmail.com" required>
+        </div>
+
+        <div class="champ">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel" placeholder="+225 01 00 00 00 00">
+        </div>
+
+        <!-- 🚗 Nouveau champ important -->
+        <div class="champ">
+            <label for="voiture">Voiture souhaitée *</label>
+            <input type="text" id="voiture" name="voiture" placeholder="Ex: Mercedes Classe C" required>
+        </div>
+
+        <div class="champ">
+            <label for="budget">Budget estimé</label>
+            <input type="text" id="budget" name="budget" placeholder="Ex: 20 000 000 FCFA">
+        </div>
+
+        <div class="champ">
+            <label for="sujet">Type de demande *</label>
+            <select id="sujet" name="sujet" required>
+                <option value="">-- Choisir une option --</option>
+                <option value="achat">Achat de voiture</option>
+                <option value="info">Demande d'information</option>
+                <option value="support">Support technique</option>
+                <option value="partenariat">Partenariat</option>
+                <option value="autre">Autre</option>
+            </select>
+        </div>
+
+        <div class="champ">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6"
+                placeholder="Donnez plus de détails sur votre demande..." required></textarea>
+        </div>
+
+
+        <div id="confirmationMessage" class="confirmation-message" aria-live="polite"></div>
+
+        <button type="submit" class="btn-envoyer">
+            passez la commande
+        </button>
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 — AS AUTO</p>
+</footer>
+</body>
+</html>
